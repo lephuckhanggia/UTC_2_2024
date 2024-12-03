@@ -31,9 +31,9 @@ int V_S1, V_S2, V_S3, V_S4, V_S5, V_SB;
 #define EnB 3
 
 //Stage_button
-#define But1 A3
-#define But2 A0
-#define But3 A2
+#define But1 A0
+#define But2 0
+#define But3 1
 bool V_But1, V_But2, V_But3;
 
 //Led_stage_button
