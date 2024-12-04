@@ -1,9 +1,9 @@
 int currentMode = 0;
 //Speed
-int SpeedMax = 55;  //55 
-int SpeedMin_1 = 50;  //50
-int SpeedMin_2 = 40;  //40
-int SpeedMin_3 = 20;  //40
+int SpeedMax = 80;  //55 
+int SpeedMin_1 = 70;  //50
+int SpeedMin_2 = 60;  //40
+int SpeedMin_3 = 30;  //40
 int SpeedLech = 15.5; //15.5
 
 //A-Trai B-Phai
@@ -47,7 +47,7 @@ bool V_But1, V_But2, V_But3;
 
 
 //Others
-int Turn90Delay = 200;    //150-200
+int Turn90Delay = 100;    //150-200
 int Stop_Turn90Delay = 100;
 int Turn_check = 0;
 int Turning = 0;
