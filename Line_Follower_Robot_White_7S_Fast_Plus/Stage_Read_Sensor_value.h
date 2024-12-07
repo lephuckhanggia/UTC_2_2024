@@ -8,7 +8,6 @@ void Read_Sensor_Value()
  V_S5 = digitalRead(S5);
  V_STR = digitalRead(STR);
  V_SB = digitalRead(SB);
- delay(10);
 }
 void Read_Button_Value() 
 {
@@ -19,8 +18,6 @@ void Read_Button_Value()
 void Run_Button_Stage() {
     if (V_But1 == LOW) {
         currentMode = 1;
-        digitalWrite(Led1, HIGH);
-        digitalWrite(Led2, LOW);
     }
     if (V_But2 == LOW) {
         currentMode = 2;

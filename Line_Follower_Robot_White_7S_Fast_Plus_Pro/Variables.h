@@ -1,10 +1,10 @@
 int currentMode = 0;
 //Speed
-int SpeedMax = 120;  //55 
-int SpeedMin_1 = 90;  //50
-int SpeedMin_2 = 60;  //40
-int SpeedMin_3 = 20;  //40
-int SpeedLech = 32; //15.5
+int SpeedMax = 200;  //55 
+int SpeedMin_1 = 140;  //50
+int SpeedMin_2 = 90;  //40
+int SpeedMin_3 = 7;  //40
+int SpeedLech = 30; //15.5
 
 //A-Trai B-Phai
 int SpeedA = SpeedMax + SpeedLech ;
@@ -13,11 +13,11 @@ int SpeedMinA_1 = SpeedMin_1+ SpeedLech;
 int SpeedMinB_1 = SpeedMin_1 ;
 int SpeedMinA_2 = SpeedMin_2 + SpeedLech;
 int SpeedMinB_2 = SpeedMin_2;
-int SpeedMinA_3 = SpeedMin_3 + SpeedLech;
+int SpeedMinA_3 = SpeedMin_3 + SpeedLech; 
 int SpeedMinB_3 = SpeedMin_3;
 
 //Others
-int Turn90Delay = 40;    //150-200
+int Turn90Delay = 20;    //150-200
 int Turn_check = 0;
 int Turning = 0;
 int Time = 0;
@@ -31,6 +31,7 @@ int Start = 0;
 #define S5 A3
 #define STR 12
 #define SB A5
+
 int V_STL ,V_S1, V_S2, V_S3, V_S4, V_S5, V_STR, V_SB;
 
 //L298n driver

@@ -36,6 +36,7 @@ void OneWD_Turn_Left()
   analogWrite(EnB, SpeedB);
 }
 void TwoWD_Turn_Left()
+{
   digitalWrite(In1, LOW);
   digitalWrite(In2, HIGH);
   digitalWrite(In3, HIGH);

@@ -8,7 +8,6 @@ void Read_Sensor_Value()
  V_S5 = digitalRead(S5);
  V_STR = digitalRead(STR);
  V_SB = digitalRead(SB);
- delay(10);
 }
 void Read_Button_Value() 
 {

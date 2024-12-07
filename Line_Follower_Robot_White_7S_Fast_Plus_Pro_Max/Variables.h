@@ -1,10 +1,10 @@
 int currentMode = 0;
-//Speed
-int SpeedMax = 100;  //55 
-int SpeedMin_1 = 90;  //50
-int SpeedMin_2 = 65;  //40
-int SpeedMin_3 = 25;  //40
-int SpeedLech = 15.5; //15.5
+//Speed //12.2V
+int SpeedMax = 225;  //55 
+int SpeedMin_1 = 180;  //50
+int SpeedMin_2 = 100;  //40
+int SpeedMin_3 = 10;  //40
+int SpeedLech = 30; //15.5
 
 //A-Trai B-Phai
 int SpeedA = SpeedMax + SpeedLech ;
@@ -13,9 +13,15 @@ int SpeedMinA_1 = SpeedMin_1+ SpeedLech;
 int SpeedMinB_1 = SpeedMin_1 ;
 int SpeedMinA_2 = SpeedMin_2 + SpeedLech;
 int SpeedMinB_2 = SpeedMin_2;
-int SpeedMinA_3 = SpeedMin_3 + SpeedLech;
+int SpeedMinA_3 = SpeedMin_3 + SpeedLech; 
 int SpeedMinB_3 = SpeedMin_3;
 
+//Others
+int Turn90Delay = 10;    //150-200
+int Turn_check = 0;
+int Turning = 0;
+int Time = 0;
+int Start = 0;
 //Sensors
 #define STL 8
 #define S1 A2
@@ -25,6 +31,7 @@ int SpeedMinB_3 = SpeedMin_3;
 #define S5 A3
 #define STR 12
 #define SB A5
+
 int V_STL ,V_S1, V_S2, V_S3, V_S4, V_S5, V_STR, V_SB;
 
 //L298n driver
@@ -44,14 +51,6 @@ bool V_But1, V_But2, V_But3;
 //Led_stage_button
 #define Led1 A4
 #define Led2 A1
-
-
-//Others
-int Turn90Delay = 50;    //150-200
-int Stop_Turn90Delay = 100;
-int Turn_check = 0;
-int Turning = 0;
-int Time = 0;
 
 void Variable_Status() {
   pinMode(STL, INPUT);

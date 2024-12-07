@@ -1,11 +1,16 @@
 int currentMode = 0;
 //Speed
-int SpeedMax = 120;  //55 
-int SpeedMin_1 = 90;  //50
-int SpeedMin_2 = 60;  //40
+int SpeedMax = 55;  //55 
+int SpeedMin_1 = 45;  //50
+int SpeedMin_2 = 37;  //40
 int SpeedMin_3 = 20;  //40
-int SpeedLech = 32; //15.5
-
+int SpeedLech = 16; //15.5
+//Others
+int Turn90Delay = 150;    //150-200
+int Turn_check = 0;
+int Turning = 0;
+int Time = 0;
+int Start = 0;
 //A-Trai B-Phai
 int SpeedA = SpeedMax + SpeedLech ;
 int SpeedB = SpeedMax ;
@@ -16,12 +21,6 @@ int SpeedMinB_2 = SpeedMin_2;
 int SpeedMinA_3 = SpeedMin_3 + SpeedLech;
 int SpeedMinB_3 = SpeedMin_3;
 
-//Others
-int Turn90Delay = 40;    //150-200
-int Turn_check = 0;
-int Turning = 0;
-int Time = 0;
-int Start = 0;
 //Sensors
 #define STL 8
 #define S1 A2
